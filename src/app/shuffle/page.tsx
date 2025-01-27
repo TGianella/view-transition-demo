@@ -12,7 +12,7 @@ export default function Shuffle() {
             <style global jsx>{customTransition}</style>
             <style global jsx>{staticHeader}</style>
             <style global jsx>{shuffle}</style>
-            <App withTransition withShuffle viewTransitionNames={{card: true}}/>
+            <App withTransition withShuffle viewTransitionNames={{card: true, feature: false }}/>
         </>
     );
 }

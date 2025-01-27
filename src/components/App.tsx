@@ -7,8 +7,15 @@ import {Card} from "@/components/Card";
 import { colors as colorsData } from "@/data/colors"
 import {flushSync} from "react-dom";
 import {sattoloCycle} from "@/app/shuffle/shuffle.utils";
+import {ViewTransitionNames} from "@/types";
 
-export function App({ withTransition = false, withShuffle = false, viewTransitionNames = {},  }) {
+type appProps = {
+    withTransition: boolean;
+    withShuffle: boolean;
+    viewTransitionNames: ViewTransitionNames;
+}
+
+export function App({ withTransition = false, withShuffle = false, viewTransitionNames = { card: false, feature: false },  }) {
     const [featured, setFeatured] = useState(-1);
     const [colors, setColors] = useState(colorsData);
 

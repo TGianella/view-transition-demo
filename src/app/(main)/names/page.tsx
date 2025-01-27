@@ -9,7 +9,7 @@ export default function ViewTransitionNamesCards() {
         <>
             <style global jsx>{customTransition}</style>
             <style global jsx>{staticHeader}</style>
-            <App withTransition viewTransitionNames={{card: true}} />
+            <App withTransition viewTransitionNames={{card: true, feature: false }} />
         </>
     );
 }
