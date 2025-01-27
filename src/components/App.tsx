@@ -10,9 +10,9 @@ import {sattoloCycle} from "@/app/shuffle/shuffle.utils";
 import {ViewTransitionNames} from "@/types";
 
 type appProps = {
-    withTransition: boolean;
-    withShuffle: boolean;
-    viewTransitionNames: ViewTransitionNames;
+    withTransition?: boolean;
+    withShuffle?: boolean;
+    viewTransitionNames?: ViewTransitionNames;
 }
 
 export function App({ withTransition = false, withShuffle = false, viewTransitionNames = { card: false, feature: false },  }: appProps) {
