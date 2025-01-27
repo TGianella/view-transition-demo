@@ -15,7 +15,7 @@ type appProps = {
     viewTransitionNames: ViewTransitionNames;
 }
 
-export function App({ withTransition = false, withShuffle = false, viewTransitionNames = { card: false, feature: false },  }) {
+export function App({ withTransition = false, withShuffle = false, viewTransitionNames = { card: false, feature: false },  }: appProps) {
     const [featured, setFeatured] = useState(-1);
     const [colors, setColors] = useState(colorsData);
 
@@ -32,7 +32,7 @@ export function App({ withTransition = false, withShuffle = false, viewTransitio
 
             return () => clearInterval(interval);
         }
-    }, []);
+    }, [withShuffle]);
 
     const handleCardClick = (i: number) => {
         if (withTransition) {
