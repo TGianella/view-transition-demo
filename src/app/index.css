@@ -51,7 +51,6 @@ header {
 .cards-list {
   display: grid;
   width: 100vw;
-  max-height: 80vh;
   padding: 5vh 5vw;
   box-sizing: border-box;
   grid-template-columns: repeat(5, 1fr);
@@ -140,4 +139,11 @@ button:focus-visible {
   padding-inline: 1em;
   padding-top: 4px;
   flex: 1;
+}
+
+.shuffle {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
 }

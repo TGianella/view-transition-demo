@@ -12,8 +12,4 @@ export const shuffle = css.global`
     .card {
         box-shadow: none;
     }
-    
-    .cards-list {
-        padding: 5vh 5vw;
-    }
 `
