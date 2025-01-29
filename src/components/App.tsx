@@ -72,7 +72,7 @@ export function App({ withTransition = false, withShuffle = false, viewTransitio
                     <Feature withName={!!viewTransitionNames['feature']} color={colors[featured]}/>
                     {colors
                         .filter((_, i) => i !== featured)
-                        .slice(0, 4)
+                        .slice(0, 6)
                         .map((color, i) => {
                             const index = i < featured ? i : i + 1;
                             return <Card withName={!!viewTransitionNames['card']} onClick={() => handleCardClick(index)} color={color} key={color}/>;

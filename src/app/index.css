@@ -51,19 +51,20 @@ header {
 .cards-list {
   display: grid;
   width: 100vw;
-  padding: 10vh 15vw;
+  max-height: 80vh;
+  padding: 5vh 5vw;
   box-sizing: border-box;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, min(1fr, 20vh));
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 4em;
 }
 
 .feature-wrapper {
   box-sizing: border-box;
   width: 100vw;
-  padding: 10vh 15vw;
+  padding: 5vh 5vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 5em;
 }
