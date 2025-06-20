@@ -147,3 +147,21 @@ button:focus-visible {
   width: 100vw;
   height: 100vh;
 }
+
+.debug {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.panel {
+  border-radius: 1rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  padding: 1rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import {customTransition} from "@/app/(main)/custom-transition/customTransition.styled";
+import {customTransition} from "@/styles/customTransition.styled";
 import {App} from "@/components/App";
 
 export default function CustomTransition() {

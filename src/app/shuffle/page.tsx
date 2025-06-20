@@ -1,7 +1,7 @@
 "use client";
 
-import {customTransition} from "@/app/(main)/custom-transition/customTransition.styled";
-import {staticHeader} from "@/app/(main)/static-header/staticHeader.styled";
+import {customTransition} from "@/styles/customTransition.styled";
+import {staticHeader} from "@/styles/staticHeader.styled";
 import {shuffle} from "@/app/shuffle/shuffle.styled";
 
 import {App} from "@/components/App";

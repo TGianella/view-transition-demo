@@ -8,6 +8,7 @@ export const Feature = ({
   const viewTransitionProperties = withName
     ? {
         viewTransitionName: `card-${color}`,
+        viewTransitionClass: "card"
       }
     : {};
 
