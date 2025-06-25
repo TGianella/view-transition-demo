@@ -15,6 +15,7 @@ export const Header = ({ onClick }: { onClick: () => void }) => {
         <Link className={`${pathname === '/names' ? 'active' : ''}`} href={"/names"}>Names</Link>
         <Link className={`${pathname === '/feature' ? 'active' : ''}`} href={"/feature"}>Feature</Link>
         <Link className={`${pathname === '/aspect-ratio' ? 'active' : ''}`} href={"/aspect-ratio"}>Aspect ratio</Link>
+        <Link className={`${pathname === '/types' ? 'active' : ''}`} href={"/types"}>Types</Link>
       </nav>
     </header>
   );

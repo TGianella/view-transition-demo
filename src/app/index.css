@@ -165,3 +165,34 @@ button:focus-visible {
     margin: 0;
   }
 }
+
+.pager {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 1em;
+  view-transition-name: pager;
+
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  button {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+
+    &.active {
+      filter: brightness(0.7);
+    }
+  }
+}
+
+::view-transition-old(pager):only-child {
+  animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+  300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-bottom;
+}
+
+::view-transition-new(pager):only-child {
+  animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+  300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-bottom;
+}

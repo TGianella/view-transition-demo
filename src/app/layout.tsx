@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./index.css";
+import "./keyframes.css";
 import 'material-icons/iconfont/material-icons.css'
 
 export const metadata: Metadata = {
