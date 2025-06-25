@@ -93,7 +93,7 @@ export function App({ withTransition = false, withShuffle = false, withPager = f
                 </div>
             ) : (
                 <div className="feature-wrapper">
-                    <Feature withName={!!viewTransitionNames['feature']} color={colors[featured]}/>
+                    <Feature withName={!!viewTransitionNames['feature']} color={offsetColors[featured]}/>
                     {offsetColors
                         .filter((_, i) => i !== featured)
                         .slice(0, 6)
